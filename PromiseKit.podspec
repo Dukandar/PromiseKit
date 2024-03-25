@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.10'
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
+  s.visionos.deployment_target = "1.0"
 
   s.subspec 'Accounts' do |ss|
     ss.ios.source_files = ss.osx.source_files = 'Extensions/Accounts/Sources/*'
