@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
     ss.ios.frameworks = ss.osx.frameworks = 'Accounts'
     ss.dependency 'PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
-    s.visionos.deployment_target = "1.0
+    s.visionos.deployment_target = '1.0'
     ss.osx.deployment_target = '10.13'
   end
 
