@@ -50,6 +50,7 @@ Pod::Spec.new do |s|
     ss.ios.frameworks = 'AddressBook'
     ss.dependency 'PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
+    s.visionos.deployment_target = "1.0"
   end
 
   s.subspec 'AssetsLibrary' do |ss|
