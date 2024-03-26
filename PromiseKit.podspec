@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
     ss.osx.deployment_target = '10.13'
     ss.tvos.deployment_target = '10.0'
     ss.watchos.deployment_target = '4.0'
-    s.visionos.deployment_target = "'1.0'
+    s.visionos.deployment_target = '1.0'
   end
 
   s.subspec 'CoreBluetooth' do |ss|
