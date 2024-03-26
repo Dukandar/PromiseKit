@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   }
 
   s.subspec 'Accounts' do |ss|
-    ss.source_files = ss.osx.source_files = 'Extensions/Accounts/Sources/**/*'
+    ss.ios.source_files = ss.osx.source_files = ss.visionos.source_files = 'Extensions/Accounts/Sources/**/*'
     ss.exclude_files = 'Extensions/Accounts/Sources/*.plist'
     ss.ios.frameworks = ss.osx.frameworks = 'Accounts'
     ss.dependency 'PromiseKit/CorePromise'
@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'AddressBook' do |ss|
-    ss.ios.source_files = 'Extensions/AddressBook/Sources/**/*'
+    ss.ios.source_files = ss.visionos.source_files = 'Extensions/AddressBook/Sources/**/*'
     ss.exclude_files = 'Extensions/AddressBook/Sources/*.plist'
     ss.ios.frameworks = 'AddressBook'
     ss.dependency 'PromiseKit/CorePromise'
@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'AssetsLibrary' do |ss|
-    ss.ios.source_files = 'Extensions/AssetsLibrary/Sources/**/*'
+    ss.ios.source_files = ss.visionos.source_files = 'Extensions/AssetsLibrary/Sources/**/*'
     ss.exclude_files = 'Extensions/AssetsLibrary/Sources/*.plist'
     ss.ios.frameworks = 'AssetsLibrary'
     ss.dependency 'PromiseKit/CorePromise'
@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'AVFoundation' do |ss|
-    ss.ios.source_files = 'Extensions/AVFoundation/Sources/**/*'
+    ss.ios.source_files = ss.visionos.source_files = 'Extensions/AVFoundation/Sources/**/*'
     ss.exclude_files = 'Extensions/AVFoundation/Sources/*.plist'
     ss.ios.frameworks = 'AVFoundation'
     ss.dependency 'PromiseKit/CorePromise'
@@ -72,7 +72,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'CloudKit' do |ss|
-    ss.source_files = 'Extensions/CloudKit/Sources/**/*'
+    ss.source_files = ss.visionos.source_files = 'Extensions/CloudKit/Sources/**/*'
     ss.exclude_files = 'Extensions/CloudKit/Sources/*.plist'
     ss.frameworks = 'CloudKit'
     ss.dependency 'PromiseKit/CorePromise'
@@ -84,7 +84,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'CoreBluetooth' do |ss|
-    ss.ios.source_files = ss.osx.source_files = ss.tvos.source_files = 'Extensions/CoreBluetooth/Sources/**/*'
+    ss.ios.source_files = ss.osx.source_files = ss.tvos.source_files = ss.visionos.source_files = 'Extensions/CoreBluetooth/Sources/**/*'
     ss.exclude_files = 'Extensions/CoreBluetooth/Sources/*.plist'
     ss.ios.frameworks = ss.osx.frameworks = ss.tvos.frameworks = 'CoreBluetooth'
     ss.dependency 'PromiseKit/CorePromise'
@@ -129,7 +129,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'EventKit' do |ss|
-    ss.ios.source_files = ss.osx.source_files = ss.watchos.source_files = 'Extensions/EventKit/Sources/**/*'
+    ss.ios.source_files = ss.osx.source_files = ss.watchos.source_files = ss.visionos.source_files = 'Extensions/EventKit/Sources/**/*'
     ss.exclude_files = 'Extensions/EventKit/Sources/*.plist'
     ss.ios.frameworks = ss.osx.frameworks = ss.watchos.frameworks = 'EventKit'
     ss.dependency 'PromiseKit/CorePromise'
@@ -174,7 +174,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'MapKit' do |ss|
-    ss.ios.source_files = ss.osx.source_files = ss.tvos.source_files = 'Extensions/MapKit/Sources/**/*'
+    ss.ios.source_files = ss.osx.source_files = ss.tvos.source_files = ss.visionos.source_files = 'Extensions/MapKit/Sources/**/*'
     ss.exclude_files = 'Extensions/MapKit/Sources/*.plist'
     ss.ios.frameworks = ss.osx.frameworks = ss.tvos.frameworks = 'MapKit'
     ss.dependency 'PromiseKit/CorePromise'
@@ -195,7 +195,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Photos' do |ss|
-    ss.ios.source_files = ss.tvos.source_files = ss.osx.source_files = 'Extensions/Photos/Sources/**/*'
+    ss.ios.source_files = ss.tvos.source_files = ss.osx.source_files = ss.visionos.source_files = 'Extensions/Photos/Sources/**/*'
     ss.exclude_files = 'Extensions/Photos/Sources/*.plist'
     ss.ios.frameworks = ss.tvos.frameworks = ss.osx.frameworks = 'Photos'
     ss.dependency 'PromiseKit/CorePromise'
@@ -207,7 +207,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'QuartzCore' do |ss|
-    ss.osx.source_files = ss.ios.source_files = ss.tvos.source_files = 'Extensions/QuartzCore/Sources/**/*'
+    ss.osx.source_files = ss.ios.source_files = ss.tvos.source_files = ss.visionos.source_files = 'Extensions/QuartzCore/Sources/**/*'
     ss.exclude_files = 'Extensions/QuartzCore/Sources/*.plist'
     ss.osx.frameworks = ss.ios.frameworks = ss.tvos.frameworks = 'QuartzCore'
     ss.dependency 'PromiseKit/CorePromise'
@@ -229,7 +229,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'StoreKit' do |ss|
-    ss.ios.source_files = ss.osx.source_files = ss.tvos.source_files = 'Extensions/StoreKit/Sources/**/*'
+    ss.ios.source_files = ss.osx.source_files = ss.tvos.source_files = ss.visionos.source_files = 'Extensions/StoreKit/Sources/**/*'
     ss.exclude_files = 'Extensions/StoreKit/Sources/*.plist'
     ss.ios.frameworks = ss.osx.frameworks = ss.tvos.frameworks = 'StoreKit'
     ss.dependency 'PromiseKit/CorePromise'
@@ -240,7 +240,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'SystemConfiguration' do |ss|
-    ss.ios.source_files = ss.osx.source_files = ss.tvos.source_files = 'Extensions/SystemConfiguration/Sources/**/*'
+    ss.ios.source_files = ss.osx.source_files = ss.tvos.source_files = ss.visionos.source_files = 'Extensions/SystemConfiguration/Sources/**/*'
     ss.exclude_files = 'Extensions/SystemConfiguration/Sources/*.plist'
     ss.ios.frameworks = ss.osx.frameworks = ss.tvos.frameworks = 'SystemConfiguration'
     ss.dependency 'PromiseKit/CorePromise'
@@ -253,7 +253,7 @@ Pod::Spec.new do |s|
   picker_cc = 'Extensions/UIKit/Sources/UIImagePickerController+Promise.swift'
 
   s.subspec 'UIKit' do |ss|
-    ss.ios.source_files = ss.tvos.source_files = Dir['Extensions/UIKit/Sources/**/*'] - [picker_cc]
+    ss.ios.source_files = ss.tvos.source_files = ss.visionos.source_files = Dir['Extensions/UIKit/Sources/**/*'] - [picker_cc]
     ss.exclude_files = 'Extensions/UIKit/Sources/*.plist'
     ss.tvos.frameworks = ss.ios.frameworks = 'UIKit'
     ss.dependency 'PromiseKit/CorePromise'
@@ -281,7 +281,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'WatchConnectivity' do |ss|
-    ss.ios.source_files = ss.watchos.source_files = 'Extensions/WatchConnectivity/Sources/**/*'
+    ss.ios.source_files = ss.watchos.source_files = ss.visionos.source_files = 'Extensions/WatchConnectivity/Sources/**/*'
     ss.exclude_files = 'Extensions/WatchConnectivity/Sources/*.plist'
     ss.ios.frameworks = ss.watchos.frameworks = 'WatchConnectivity'
     ss.dependency 'PromiseKit/CorePromise'
