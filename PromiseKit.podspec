@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = ss.osx.source_files = ss.visionos.source_files = 'Extensions/Accounts/Sources/**/*'
     ss.exclude_files = 'Extensions/Accounts/Sources/*.plist'
     ss.ios.frameworks = ss.osx.frameworks = 'Accounts'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
     s.visionos.deployment_target = '1.0'
     ss.osx.deployment_target = '10.13'
@@ -48,7 +48,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = ss.visionos.source_files = 'Extensions/AddressBook/Sources/**/*'
     ss.exclude_files = 'Extensions/AddressBook/Sources/*.plist'
     ss.ios.frameworks = 'AddressBook'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
     s.visionos.deployment_target = '1.0'
   end
@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = ss.visionos.source_files = 'Extensions/AssetsLibrary/Sources/**/*'
     ss.exclude_files = 'Extensions/AssetsLibrary/Sources/*.plist'
     ss.ios.frameworks = 'AssetsLibrary'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
     s.visionos.deployment_target = '1.0'
   end
@@ -66,7 +66,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = ss.visionos.source_files = 'Extensions/AVFoundation/Sources/**/*'
     ss.exclude_files = 'Extensions/AVFoundation/Sources/*.plist'
     ss.ios.frameworks = 'AVFoundation'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
     s.visionos.deployment_target = '1.0'
   end
@@ -75,7 +75,7 @@ Pod::Spec.new do |s|
     ss.source_files = ss.visionos.source_files = 'Extensions/CloudKit/Sources/**/*'
     ss.exclude_files = 'Extensions/CloudKit/Sources/*.plist'
     ss.frameworks = 'CloudKit'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
     ss.osx.deployment_target = '10.13'
     ss.tvos.deployment_target = '10.0'
@@ -87,7 +87,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = ss.osx.source_files = ss.tvos.source_files = ss.visionos.source_files = 'Extensions/CoreBluetooth/Sources/**/*'
     ss.exclude_files = 'Extensions/CoreBluetooth/Sources/*.plist'
     ss.ios.frameworks = ss.osx.frameworks = ss.tvos.frameworks = 'CoreBluetooth'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
     ss.osx.deployment_target = '10.13'
     ss.tvos.deployment_target = '10.0'
@@ -118,7 +118,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'Extensions/CoreLocation/Sources/**/*'
     ss.exclude_files = 'Extensions/CoreLocation/Sources/*.plist'
     ss.watchos.source_files = 'Extensions/CoreLocation/Sources/CLGeocoder*'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.frameworks = 'CoreLocation'
 
     ss.ios.deployment_target = '10.0'
@@ -132,7 +132,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = ss.osx.source_files = ss.watchos.source_files = ss.visionos.source_files = 'Extensions/EventKit/Sources/**/*'
     ss.exclude_files = 'Extensions/EventKit/Sources/*.plist'
     ss.ios.frameworks = ss.osx.frameworks = ss.watchos.frameworks = 'EventKit'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
 
     ss.ios.deployment_target = '10.0'
     ss.osx.deployment_target = '10.13'
@@ -143,7 +143,7 @@ Pod::Spec.new do |s|
   s.subspec 'Foundation' do |ss|
     ss.source_files = Dir['Extensions/Foundation/Sources/**/*']
     ss.exclude_files = 'Extensions/Foundation/Sources/*.plist'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.frameworks = 'Foundation'
     ss.ios.deployment_target = '10.0'
     ss.osx.deployment_target = '10.13'
@@ -155,7 +155,7 @@ Pod::Spec.new do |s|
   s.subspec 'HealthKit' do |ss|
     ss.source_files = Dir['Extensions/HealthKit/Sources/**/*']
     ss.exclude_files = 'Extensions/HealthKit/Sources/*.plist'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.frameworks = 'HealthKit'
     ss.ios.deployment_target = '10.0'
     ss.watchos.deployment_target = '4.0'
@@ -165,7 +165,7 @@ Pod::Spec.new do |s|
   s.subspec 'HomeKit' do |ss|
     ss.source_files = Dir['Extensions/HomeKit/Sources/**/*']
     ss.exclude_files = 'Extensions/HomeKit/Sources/*.plist'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.frameworks = 'HomeKit'
     ss.ios.deployment_target = '10.0'
     ss.watchos.deployment_target = '4.0'
@@ -177,7 +177,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = ss.osx.source_files = ss.tvos.source_files = ss.visionos.source_files = 'Extensions/MapKit/Sources/**/*'
     ss.exclude_files = 'Extensions/MapKit/Sources/*.plist'
     ss.ios.frameworks = ss.osx.frameworks = ss.tvos.frameworks = 'MapKit'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
     ss.osx.deployment_target = '10.13'
     ss.watchos.deployment_target = '4.0'
@@ -189,7 +189,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = 'Extensions/MessagesUI/Sources/**/*'
     ss.exclude_files = 'Extensions/MessagesUI/Sources/*.plist'
     ss.ios.frameworks = 'MessageUI'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
     s.visionos.deployment_target = '1.0'
   end
@@ -198,7 +198,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = ss.tvos.source_files = ss.osx.source_files = ss.visionos.source_files = 'Extensions/Photos/Sources/**/*'
     ss.exclude_files = 'Extensions/Photos/Sources/*.plist'
     ss.ios.frameworks = ss.tvos.frameworks = ss.osx.frameworks = 'Photos'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
 
     ss.ios.deployment_target = '10.0'
     ss.osx.deployment_target = '10.13'
@@ -210,7 +210,7 @@ Pod::Spec.new do |s|
     ss.osx.source_files = ss.ios.source_files = ss.tvos.source_files = ss.visionos.source_files = 'Extensions/QuartzCore/Sources/**/*'
     ss.exclude_files = 'Extensions/QuartzCore/Sources/*.plist'
     ss.osx.frameworks = ss.ios.frameworks = ss.tvos.frameworks = 'QuartzCore'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
     ss.osx.deployment_target = '10.13'
     ss.tvos.deployment_target = '10.0'
@@ -222,7 +222,7 @@ Pod::Spec.new do |s|
     ss.exclude_files = 'Extensions/Social/Sources/*.plist'
     ss.osx.source_files = Dir['Extensions/Social/Sources/*'] - ['Categories/Social/Sources/*SLComposeViewController+Promise.swift']
     ss.ios.frameworks = ss.osx.frameworks = 'Social'
-    ss.dependency 'PromiseKit/Foundation'
+    ss.dependency 'Dukandar/PromiseKit/Foundation'
     ss.ios.deployment_target = '10.0'
     ss.osx.deployment_target = '10.13'
     s.visionos.deployment_target = '1.0'
@@ -232,7 +232,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = ss.osx.source_files = ss.tvos.source_files = ss.visionos.source_files = 'Extensions/StoreKit/Sources/**/*'
     ss.exclude_files = 'Extensions/StoreKit/Sources/*.plist'
     ss.ios.frameworks = ss.osx.frameworks = ss.tvos.frameworks = 'StoreKit'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
     ss.osx.deployment_target = '10.13'
     ss.tvos.deployment_target = '10.0'
@@ -243,7 +243,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = ss.osx.source_files = ss.tvos.source_files = ss.visionos.source_files = 'Extensions/SystemConfiguration/Sources/**/*'
     ss.exclude_files = 'Extensions/SystemConfiguration/Sources/*.plist'
     ss.ios.frameworks = ss.osx.frameworks = ss.tvos.frameworks = 'SystemConfiguration'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
     ss.osx.deployment_target = '10.13'
     ss.tvos.deployment_target = '10.0'
@@ -256,7 +256,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = ss.tvos.source_files = ss.visionos.source_files = Dir['Extensions/UIKit/Sources/**/*'] - [picker_cc]
     ss.exclude_files = 'Extensions/UIKit/Sources/*.plist'
     ss.tvos.frameworks = ss.ios.frameworks = 'UIKit'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
     ss.tvos.deployment_target = '10.0'
     s.visionos.deployment_target = '1.0'
@@ -275,7 +275,7 @@ Pod::Spec.new do |s|
     ss.exclude_files = 'Extensions/UIKit/Sources/*.plist'
     ss.ios.frameworks = 'UIKit'
     ss.ios.xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => '$(inherited) PMKImagePickerController=1' }
-    ss.dependency 'PromiseKit/UIKit'
+    ss.dependency 'Dukandar/PromiseKit/UIKit'
     ss.ios.deployment_target = '10.0'
     s.visionos.deployment_target = '1.0'
   end
@@ -284,7 +284,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = ss.watchos.source_files = ss.visionos.source_files = 'Extensions/WatchConnectivity/Sources/**/*'
     ss.exclude_files = 'Extensions/WatchConnectivity/Sources/*.plist'
     ss.ios.frameworks = ss.watchos.frameworks = 'WatchConnectivity'
-    ss.dependency 'PromiseKit/CorePromise'
+    ss.dependency 'Dukandar/PromiseKit/CorePromise'
     ss.ios.deployment_target = '10.0'
     ss.watchos.deployment_target = '4.0'
     s.visionos.deployment_target = '1.0'
