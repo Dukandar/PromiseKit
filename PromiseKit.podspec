@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   }
 
   s.subspec 'Accounts' do |ss|
-    ss.ios.source_files = ss.osx.source_files = 'Extensions/Accounts/Sources/**/*'
+    ss.source_files = ss.osx.source_files = 'Extensions/Accounts/Sources/**/*'
     ss.exclude_files = 'Extensions/Accounts/Sources/*.plist'
     ss.ios.frameworks = ss.osx.frameworks = 'Accounts'
     ss.dependency 'PromiseKit/CorePromise'
